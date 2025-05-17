@@ -151,9 +151,9 @@ class MedigoProgram():
             # Welcome the User
             print('-------MEDIGO--------\n')
             print("Welcome to Medigo\n")
-            menue_op = int(input("Please input 0 for Registeration and 1 for login: "))
+            menu_op = int(input("Please input 0 for Registeration and 1 for login: "))
             print('----------------------\n')
-            if menue_op == 0:
+            if menu_op == 0:
                 username = input("Please input a unique username: ")
                 password = input("Please input a password: ")
 
