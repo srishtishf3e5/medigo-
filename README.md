@@ -83,7 +83,7 @@ class MedigoProgram():
         Creates order isntance after supplying username and medecine name ( medecine user is buying).
         '''
         try:
-            # Orde date
+            # Order date
             orderDate = datetime.now().strftime("%Y%m%d")
             # 3 day deleivery
             delDate = (datetime.now() + timedelta(days = 3)).strftime("%Y%m%d")
