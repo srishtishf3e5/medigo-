@@ -170,8 +170,8 @@ class MedigoProgram():
             elif menu_op == 1:
                 done = False
                 print('-------MEDIGO--------\n')
-                username = input("Please input you're unique username: ")
-                password = input("Please input you're password: ")
+                username = input("Please input your unique username: ")
+                password = input("Please input your password: ")
                 print('----------------------\n')
                 if self.logUser(username, password):
                     while True:
