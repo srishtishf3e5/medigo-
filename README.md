@@ -80,7 +80,7 @@ class MedigoProgram():
             return False
     def createOrder(self, uname, mname):
         '''
-        Creates order isntance after supplying username and medecine name ( medecine user is buying).
+        Creates order instance after supplying username and medecine name ( medecine user is buying).
         '''
         try:
             # Order date
