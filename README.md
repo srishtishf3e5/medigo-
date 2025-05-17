@@ -175,10 +175,10 @@ class MedigoProgram():
                 print('----------------------\n')
                 if self.logUser(username, password):
                     while True:
-                        log_op = int(input("Please input 0 for viewing you're orders.\n" +"Please input 1 for making an order\n" +
+                        log_op = int(input("Please input 0 for viewing your orders.\n" +"Please input 1 for making an order\n" +
                                        "Please input 2 if you want to exit: "))
                         if log_op == 0:
-                            meds = self.retreiveOrders(self.currUser)
+                            meds = self.retrieveOrders(self.currUser)
                             print('--------ORDERS-------\n')
                             for med_info in meds:
                                 medName = med_info[1]
