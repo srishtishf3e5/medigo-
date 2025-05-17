@@ -46,11 +46,11 @@ class MedigoProgram():
     def intialize(self,host, uname , passwd,db_name, port):
         '''
         Connects app to database and Creates Tables
-        Important to initalise before starting the menue
+        Important to initalize before starting the menu
         '''
         m.connect(host, user, password, database, port)
         m.createTables()
-        self.intialised = True
+        self.intialized = True
 
     def createUser(self, username, password):
         '''
@@ -143,7 +143,7 @@ class MedigoProgram():
         '''
         GUI for the App
         '''
-        if not self.intialised:
+        if not self.intialized:
             print('-------FAILED--------\n')
             print("Initalise the App first.\n")
             print('-----------------------\n')
@@ -235,6 +235,6 @@ host ='localhost'
 database = 'Medigo'
 port = 3306
 
-m.intialise(host,user,password,database,port)
+m.intialize(host,user,password,database,port)
 m.menue();
    
