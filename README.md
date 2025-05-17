@@ -45,7 +45,7 @@ class MedigoProgram():
 
     def intialize(self,host, uname , passwd,db_name, port):
         '''
-        Conects App to database and Creates Tables
+        Connects app to database and Creates Tables
         Important to initalise before starting the menue
         '''
         m.connect(host, user, password, database, port)
