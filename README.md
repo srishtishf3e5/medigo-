@@ -3,7 +3,7 @@ from datetime import datetime, date, timedelta
 
 class MedigoProgram():
     def __init__(self) -> None:
-        '''Intialises global variables of the application.'''
+        '''Intializes global variables of the application.'''
         self.currUser = None;
         self.curs = None;
         self.db_con = None;
