@@ -112,9 +112,9 @@ class MedigoProgram():
             print("Error")
             print(e)
             return False
-    def retreiveMeds(self):
+    def retrieveMeds(self):
         '''
-        Rereives all the medications in the database
+        Retrieves all the medications in the database
         '''
         try:
             query = f"SELECT * FROM Meds;"
@@ -126,9 +126,9 @@ class MedigoProgram():
             print(e)
             return False
 
-    def retreiveOrders(self, uname):
+    def retrieveOrders(self, uname):
         '''
-        Retreives all the orders in the database.
+        Retrieves all the orders in the database.
         '''
         try:
             query = f"SELECT * FROM Orders Where uname = '{uname}'"
