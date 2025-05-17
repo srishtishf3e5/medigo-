@@ -30,7 +30,7 @@ class MedigoProgram():
         
         try :
             # Creating User Table
-            self.curs.execute("Create Table IF NOT EXISTS  Users (uname varchar(255) Primary Key,password TEXT not null)")
+            self.curs.execute("Create Table IF NOT EXISTS  Users (uname varchar(255) Primary Key,password TEXT not null);")
             self.db_con.commit();
 
             # Creating Meds Table
@@ -38,7 +38,7 @@ class MedigoProgram():
             self.db_con.commit();
 
             # Creating Orders Table
-            self.curs.execute("Create Table IF NOT EXISTS  Orders (uname varchar(255),mname varchar(255),order_date DATE not null,del_date DATE not null,Primary Key(uname, mname))")
+            self.curs.execute("Create Table IF NOT EXISTS  Orders (uname varchar(255),mname varchar(255),order_date DATE not null,del_date DATE not null,Primary Key(uname, mname));")
             self.db_con.commit();
         except mysql.connector.Error as e:
             print(e)
