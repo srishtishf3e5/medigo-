@@ -158,8 +158,8 @@ class MedigoProgram():
                 password = input("Please input a password: ")
 
                 if self.createUser(username, password):
-                    print('-------SUCESS--------\n')
-                    print("You're account was successfully Created.\n")
+                    print('-------SUCCESS--------\n')
+                    print("Your account was successfully Created.\n")
                     print("Please login again using username and password.\n")
                     print('----------------------\n')
                 else:
@@ -167,7 +167,7 @@ class MedigoProgram():
                     print('-------FAILED--------\n')
                     print("Please register using a different username , as username is already taken.")
                     print('----------------------\n')
-            elif menue_op == 1:
+            elif menu_op == 1:
                 done = False
                 print('-------MEDIGO--------\n')
                 username = input("Please input you're unique username: ")
