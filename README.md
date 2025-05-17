@@ -85,7 +85,7 @@ class MedigoProgram():
         try:
             # Order date
             orderDate = datetime.now().strftime("%Y%m%d")
-            # 3 day deleivery
+            # 3 day delivery
             delDate = (datetime.now() + timedelta(days = 3)).strftime("%Y%m%d")
             sql = f"INSERT INTO Orders(uname, mname,order_date, del_date ) VALUES('{uname}', '{mname}' , '{orderDate}' , '{delDate}')"
             self.curs.execute(sql)
@@ -97,7 +97,7 @@ class MedigoProgram():
 
     def logUser(self, username, password):
         '''
-        Authneticates user and chnages apps current user to the auhtenticated user.
+        Authenticates user and changes apps current user to the authenticated user.
         '''
         try:
             query = f"SELECT * FROM Users WHERE uname = '{username}';"
