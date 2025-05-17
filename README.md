@@ -54,7 +54,7 @@ class MedigoProgram():
 
     def createUser(self, username, password):
         '''
-        Creates User intance in the User Table after supplying  username  and password.
+        Creates User instance in the User Table after supplying  username  and password.
         '''
         try:
             sql = f"INSERT INTO Users(uname, password) VALUES('{username}', '{password}')"
@@ -67,7 +67,7 @@ class MedigoProgram():
 
     def createMedecine(self, mname, price):
         '''
-        Creates Meds intance in the Med Table after supplying  medecine name and price
+        Creates Meds instance in the Med Table after supplying  medecine name and price
         '''
 
         try:
