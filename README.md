@@ -145,7 +145,7 @@ class MedigoProgram():
         '''
         if not self.intialized:
             print('-------FAILED--------\n')
-            print("Initalise the App first.\n")
+            print("Initalize the App first.\n")
             print('-----------------------\n')
         while True:
             # Welcome the User
