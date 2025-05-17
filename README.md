@@ -1,4 +1,4 @@
-yhimport mysql.connector
+import mysql.connector
 from datetime import datetime, date, timedelta
 
 class MedigoProgram():
