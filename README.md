@@ -139,7 +139,7 @@ class MedigoProgram():
             print("Error")
             print(e)
             return False
-   def menue(self):
+   def menu(self):
         '''
         GUI for the App
         '''
