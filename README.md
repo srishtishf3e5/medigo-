@@ -186,7 +186,7 @@ class MedigoProgram():
                                 print(f"You have ordered {medName} , will arrive on {delDate}.\n")
                             print('-----------------------\n')
                         elif log_op == 1:
-                            meds = self.retreiveMeds()
+                            meds = self.retrieveMeds()
                             print('--------AVAILABLE--------\n')
                             for med in meds:
                                 print(f"Name : {med[0]} , Price: {med[1]}\n")
