@@ -43,7 +43,7 @@ class MedigoProgram():
         except mysql.connector.Error as e:
             print(e)
 
-    def intialize(self,host, uname , passwd,db_name, port):
+    def intialize(self, host, uname, passwd, db_name, port):
         '''
         Connects app to database and Creates Tables
         Important to initalize before starting the menu
