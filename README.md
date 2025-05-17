@@ -1,4 +1,4 @@
-import mysql.connector
+yhimport mysql.connector
 from datetime import datetime, date, timedelta
 
 class MedigoProgram():
@@ -197,11 +197,11 @@ class MedigoProgram():
                             succOrder = self.createOrder(self.currUser, medName)
                             if succOrder:
                                 print('-------SUCCESS--------\n')
-                                print(f"You're Order was Successful,  You can  view the order in menue.")
+                                print(f"You're Order was Successful,  You can  view the order in menu.")
                                 print('-----------------------\n')
                             else:
                                 print('-------FAILED--------\n')
-                                print(f" Unsucessful Order")
+                                print(f" Unsuccessful Order")
                                 print('-----------------------\n')
                         elif log_op == 2:
                             # EXIT
