@@ -10,7 +10,7 @@ class MedigoProgram():
         # Only True when app is connected to database
         self.intialised = False;
     
-    def connect(self,host, uname , passwd,db_name, port):
+    def connect(self, host, uname, passwd, db_name, port):
         '''Connect Application to local SQL DATABASE '''
 
         con = mysql.connector.connect(
