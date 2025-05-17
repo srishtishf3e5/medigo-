@@ -14,11 +14,11 @@ class MedigoProgram():
         '''Connect Application to local SQL DATABASE '''
 
         con = mysql.connector.connect(
-            user = uname,
-            password = passwd,
-            host = host,
-            database = db_name,
-            port = port
+            user=uname,
+            password=passwd,
+            host=host,
+            database=db_name,
+            port=port
         )
         self.curs = con.cursor()
         self.db_con = con
